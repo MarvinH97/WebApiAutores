@@ -14,7 +14,10 @@ namespace WebApiAutores
     public class Startup
     {
         public Startup(IConfiguration configuration)
-        {            
+        {
+            /** Hace que no se mapeen los type de los claims */
+            JwtSecurityTokenHandler.DefaultOutboundClaimTypeMap.Clear();
+            /** *********************************************************/
             Configuration = configuration;
         }
 
