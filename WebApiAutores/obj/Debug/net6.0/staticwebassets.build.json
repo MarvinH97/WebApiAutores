@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "/Kg3o+pIQZxIKe2CxpyJNbStQH9mFxFpQdw+rfTq4ac=",
+  "Source": "WebApiAutores",
+  "BasePath": "_content/WebApiAutores",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApiAutores\\wwwroot",
+      "Source": "WebApiAutores",
+      "ContentRoot": "C:\\Users\\Marvin Hernández\\Documents\\Practicas Curso Api Rest Full\\WebApiAutores2\\WebApiAutores\\WebApiAutores\\wwwroot\\",
+      "BasePath": "_content/WebApiAutores",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Marvin Hernández\\Documents\\Practicas Curso Api Rest Full\\WebApiAutores2\\WebApiAutores\\WebApiAutores\\wwwroot\\Archivo 1.txt",
+      "SourceId": "WebApiAutores",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marvin Hernández\\Documents\\Practicas Curso Api Rest Full\\WebApiAutores2\\WebApiAutores\\WebApiAutores\\wwwroot\\",
+      "BasePath": "_content/WebApiAutores",
+      "RelativePath": "Archivo 1.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Archivo 1.txt"
+    }
+  ]
+}

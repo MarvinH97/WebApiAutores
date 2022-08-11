@@ -1,0 +1,36 @@
+Proceso iniciado
+Proceso en ejecución: 27/07/2022 07:50:19
+Proceso en ejecución: 27/07/2022 07:50:24
+Proceso en ejecución: 27/07/2022 07:50:29
+Proceso en ejecución: 27/07/2022 07:50:34
+Proceso en ejecución: 27/07/2022 07:50:39
+Proceso en ejecución: 27/07/2022 07:50:44
+Proceso en ejecución: 27/07/2022 07:50:49
+Proceso en ejecución: 27/07/2022 07:50:54
+Proceso en ejecución: 27/07/2022 07:50:59
+Proceso en ejecución: 27/07/2022 07:51:04
+Proceso en ejecución: 27/07/2022 07:51:09
+Proceso en ejecución: 27/07/2022 07:51:14
+Proceso en ejecución: 27/07/2022 07:51:19
+Proceso en ejecución: 27/07/2022 07:51:24
+Proceso finalizado
+Proceso iniciado
+Proceso en ejecución: 27/07/2022 07:56:43
+Proceso en ejecución: 27/07/2022 07:56:48
+Proceso en ejecución: 27/07/2022 07:56:53
+Proceso finalizado
+Proceso iniciado
+Proceso en ejecución: 27/07/2022 08:14:12
+Proceso en ejecución: 27/07/2022 08:14:17
+Proceso en ejecución: 27/07/2022 08:14:22
+Proceso en ejecución: 27/07/2022 08:14:27
+Proceso en ejecución: 27/07/2022 08:14:32
+Proceso en ejecución: 27/07/2022 08:14:37
+Proceso en ejecución: 27/07/2022 08:14:42
+Proceso en ejecución: 27/07/2022 08:14:47
+Proceso en ejecución: 27/07/2022 08:14:52
+Proceso en ejecución: 27/07/2022 08:14:57
+Proceso en ejecución: 27/07/2022 08:15:02
+Proceso en ejecución: 27/07/2022 08:15:07
+Proceso en ejecución: 27/07/2022 08:15:12
+Proceso finalizado
