@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using WebApiAutores.DTOs;
 using WebApiAutores.Entidades;
 
-namespace WebApiAutores.Controllers
+namespace WebApiAutores.Controllers.V1
 {
     [ApiController]
-    [Route("api/libros")]
+    [Route("api/v1/libros")]
     public class LibrosController : ControllerBase
     {
         private readonly ApplicationDbContext context;
@@ -21,7 +21,7 @@ namespace WebApiAutores.Controllers
         }
 
         /** Se puede asignar un mobre a una ruta en este caso "ObtenerLibro" */
-        [HttpGet("{id:int}", Name = "ObtenerLibro")]
+        [HttpGet("{id:int}", Name = "obtenerLibro")]
         public async Task<ActionResult<LibroDTOConAutores>> Get(int id)
         {
             var libro = await context.Libros
@@ -34,7 +34,7 @@ namespace WebApiAutores.Controllers
             return mapper.Map<LibroDTOConAutores>(libro);
         }
 
-        [HttpPost]
+        [HttpPost(Name = "crearLibro")]
         public async Task<ActionResult> Post(LibroCreacionDTO libroCreacionDTO)
         {
             if (libroCreacionDTO.AutoresIds == null)
@@ -49,7 +49,7 @@ namespace WebApiAutores.Controllers
             {
                 return BadRequest("No existe uno de los autores enviados");
             }
-            
+
             var libro = mapper.Map<Libro>(libroCreacionDTO);
 
             AsignarOrdenAutores(libro);
@@ -57,13 +57,13 @@ namespace WebApiAutores.Controllers
             context.Add(libro);
             await context.SaveChangesAsync();
             var libroDTO = mapper.Map<LibroDTO>(libro);
-            
+
             /** Crea una ruta que será devuelta en location del header de la respuesta, además devuelve el recurso creado en este caso el "libroDTO" */
-            return CreatedAtRoute("ObtenerLibro", new { id = libro.Id }, libroDTO);
+            return CreatedAtRoute("obtenerLibro", new { id = libro.Id }, libroDTO);
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult> Put(int id, LibroCreacionDTO libroCreacionDTO) 
+        [HttpPut("{id:int}", Name = "actualizarLibro")]
+        public async Task<ActionResult> Put(int id, LibroCreacionDTO libroCreacionDTO)
         {
             var libroDB = await context.Libros
                 .Include(s => s.AutoresLibros)
@@ -79,7 +79,7 @@ namespace WebApiAutores.Controllers
             return NoContent();
         }
 
-        private void AsignarOrdenAutores(Libro libro) 
+        private void AsignarOrdenAutores(Libro libro)
         {
             if (libro.AutoresLibros != null)
             {
@@ -91,8 +91,8 @@ namespace WebApiAutores.Controllers
         }
 
         /** Con HttpPatch podemos modificar parcialmente nuestros recursos sin estar enviando toda la data y solo mandar la data o propiedades que solo deseamos reemplazar */
-        [HttpPatch("{id:int}")]
-        public async Task<ActionResult> Patch(int id, JsonPatchDocument<LibroPatchDTO> patchDocument) 
+        [HttpPatch("{id:int}", Name = "patchLibro")]
+        public async Task<ActionResult> Patch(int id, JsonPatchDocument<LibroPatchDTO> patchDocument)
         {
             if (patchDocument == null)
             {
@@ -116,7 +116,7 @@ namespace WebApiAutores.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id:int}")]
+        [HttpDelete("{id:int}", Name = "borrarLibro")]
         public async Task<ActionResult> Delete(int id)
         {
             var existe = await context.Libros.AnyAsync(s => s.Id == id);
