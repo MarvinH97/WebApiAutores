@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IbL7ctX1DNIkrbCi0hP+Bxl1Z4b09dSymx6ofs16Mc6lCMZxoSb5wE6v9TJO8FHdFSAKULfioNGcXd2upZR5GA==",
+  "dgSpecHash": "/KiqMA+dJnUL5GlYweg5koHGYPW/X/rTmOZPM1Re+uPbe67ArKbJ+XmKBBwI5gKO6JbntyGQvwJyRnJ14RSDug==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marvin Hernández\\Documents\\Practicas Curso Api Rest Full\\WebApiAutores2\\WebApiAutores\\WebApiAutores\\WebApiAutores.csproj",
   "expectedPackageFiles": [
@@ -95,10 +95,7 @@
     "C:\\Users\\Marvin Hernández\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Marvin Hernández\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\Marvin Hernández\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
-    "C:\\Users\\Marvin Hernández\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Marvin Hernández\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.7\\microsoft.netcore.app.runtime.win-x64.6.0.7.nupkg.sha512",
-    "C:\\Users\\Marvin Hernández\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.7.nupkg.sha512",
-    "C:\\Users\\Marvin Hernández\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.7\\microsoft.aspnetcore.app.runtime.win-x64.6.0.7.nupkg.sha512"
+    "C:\\Users\\Marvin Hernández\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
